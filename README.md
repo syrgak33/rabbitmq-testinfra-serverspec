@@ -35,7 +35,7 @@ Input target host name: www.example.jp
 5. use command **rake spec** or sudo **rake-spec**
 6. It will check rabbitmq-server package, service, and port of rabbitmqUI.
 
-#Rabbittest.py
+# Rabbittest.py
 > To use this file perform these steps:
 1. **pip install pytest-testinfra**
 2. create or download rabbittest.py from here
