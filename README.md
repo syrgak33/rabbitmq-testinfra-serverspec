@@ -1,5 +1,5 @@
-## rabbitmq-testinfra-serverspec
-### _Rabbitmq_check.rb
+# rabbitmq-testinfra-serverspec
+## _Rabbitmq_check.rb
 _So there are two files rabbitmq_check.rb for **Serverspec** 
 and rabbittest.py for **TestInfra**_
 
