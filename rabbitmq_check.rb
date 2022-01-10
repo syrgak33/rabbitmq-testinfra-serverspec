@@ -14,3 +14,7 @@ end
 describe port(15672) do
   it { should be_listening }
 end
+
+describe command('sudo rabbitmqctl cluster_status') do 
+  its(:stdout) { should contain('rabbit@localhost', 'rabbit@ubserver') }
+end
