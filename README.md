@@ -41,10 +41,11 @@ Input target host name: www.example.jp
 2. create or download rabbittest.py from here
 3. and the last command: **py.test -v rabbittest.py
 4. It will check rabbitmq-server package, service, and port of rabbitmqUI.
-#UPDATE
+
+# UPDATE
 > To run test remotely on servers need to install **pip install testinfra[ansible]** on **main server**, but keep in mind that every tested server
 > needs to have python3, pip3, pytest-testinfra. Then these steps:
-1. on Ansible server run rabbittest.py   
+1. on Ansible server run rabbittest.py script: 
 ```bash 
 py.test -v rabbittest.py --force-ansible --hosts='ansible://rabbitservers'  ###instead of 'rabbitservers' write your own [rabbitgroup] from /etc/ansible/hosts
 ```
