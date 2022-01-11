@@ -55,9 +55,10 @@ py.test -v rabbittest.py --force-ansible --hosts='ansible://rabbitservers'  ###i
 py.test -v rabbittest.py --ssh-config=/root/.ssh/ssh_config --hosts='ssh://192.168.0.202','ssh://192.168.0.200'
 ```
 Don't forget to configure ssh_config.
+Example:
 ```bash
 Host serv1
-  Hostname 192.168.0.2
-  User sam
+  Hostname 192.168.0.200
+  User user
   IdentityFile /home/user/.ssh/id_rsa
  ```
