@@ -50,3 +50,14 @@ Input target host name: www.example.jp
 py.test -v rabbittest.py --force-ansible --hosts='ansible://rabbitservers'  ###instead of 'rabbitservers' write your own [rabbitgroup] from /etc/ansible/hosts
 ```
 
+2. via ssh
+```bash
+py.test -v rabbittest.py --ssh-config=/root/.ssh/ssh_config --hosts='ssh://192.168.0.202','ssh://192.168.0.200'
+```
+Don't forget to configure ssh_config.
+```bash
+Host serv1
+  Hostname 192.168.0.2
+  User sam
+  IdentityFile /home/user/.ssh/id_rsa
+ ```
