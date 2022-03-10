@@ -49,6 +49,10 @@ Input target host name: www.example.jp
 ```bash 
 py.test -v rabbittest.py --force-ansible --hosts='ansible://rabbitservers'  ###instead of 'rabbitservers' write your own [rabbitgroup] from /etc/ansible/hosts
 ```
+> To run with inventory plugin.
+```bash
+pytest -v rabbittest.py --force-ansible --hosts "ansible://_dev?ansible-inventory=/root/inv/aws_ec2.yml" --sudo
+```
 
 2. via ssh
 ```bash
