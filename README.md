@@ -2,7 +2,7 @@
 _So there are two files rabbitmq_check.rb for **Serverspec** 
 and rabbittest.py for **TestInfra**_
 
-> to use rabbitmq_check.rb we need to perfrom these steps:
+> to use rabbitmq_check.rb we need to perform these steps:
 1. Install ruby and ruby-serverspec packages.
 2. gem install serverspec
 3. perform these steps
